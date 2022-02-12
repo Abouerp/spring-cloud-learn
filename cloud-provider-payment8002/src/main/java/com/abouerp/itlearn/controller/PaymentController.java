@@ -3,7 +3,6 @@ package com.abouerp.itlearn.controller;
 import com.abouerp.itlearn.beans.ResultBean;
 import com.abouerp.itlearn.entities.Payment;
 import com.abouerp.itlearn.service.PaymentService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -14,11 +13,11 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/payment")
-@Slf4j
 public class PaymentController {
 
     @Autowired
     private PaymentService paymentService;
+
     @Value("${server.port}")
     private String serverPort;
 

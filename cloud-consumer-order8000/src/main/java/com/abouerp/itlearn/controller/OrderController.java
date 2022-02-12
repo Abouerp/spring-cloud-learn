@@ -21,7 +21,9 @@ public class OrderController {
     @Autowired
     private RestTemplate restTemplate;
 
-    public static final String PAYMENT_URL = "http://localhost:8001";
+//    public static final String PAYMENT_URL = "http://localhost:8001";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";    //这个url根据eureka server页面中的Application来得到，即对应程序name
+
 
     @GetMapping("/consumer/payment/create")
     public ResultBean create(Payment payment){
