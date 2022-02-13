@@ -33,4 +33,6 @@ eureka:
 #      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     instance-id: payment8001
-    prefer-ip-address: true         #显示服务的ip
+    prefer-ip-address: true         #访问路径可以显示ip
+    lease-renewal-interval-in-seconds: 1  #eureka客户端向服务端发送心跳的时间间隔，单位为秒（默认是30s）
+    lease-expiration-duration-in-seconds: 2     #eureka服务端在收到最后一次心跳后等待时间上限，超时就要剔除这个客户端服务
