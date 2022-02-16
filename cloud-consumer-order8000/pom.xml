@@ -15,6 +15,7 @@
 		<!--		eureka client-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+		<!--	eureka client这个依赖中自带ribbon依赖，所以能实现负载均衡		-->
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<!--			<version></version>-->
 		</dependency>
