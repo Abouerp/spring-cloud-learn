@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationContextConfig {
 
     @Bean
-    @LoadBalanced      //开启负载均衡   修改了url后要加这个注解，不然的不知道对应哪个程序会出bug
+//    @LoadBalanced      //开启负载均衡   修改了url后要加这个注解，不然的不知道对应哪个程序会出bug
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }

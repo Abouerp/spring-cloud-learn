@@ -35,4 +35,9 @@ public class PaymentController {
             return ResultBean.ok(payment+serverPort+"fail");
         }
     }
+
+    @GetMapping("/lb")
+    public  String getPaymentLB(){
+        return serverPort;
+    }
 }
