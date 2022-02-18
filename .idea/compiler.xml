@@ -13,6 +13,7 @@
         <module name="cloud-provider-payment8004" />
         <module name="cloud-provider-payment8002" />
         <module name="cloud-consumer-order8000" />
+        <module name="cloud-consumer-feign-order8000" />
         <module name="cloud-consumerzk-order8000" />
         <module name="cloud-provider-payment8001" />
       </profile>

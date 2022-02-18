@@ -1,0 +1,10 @@
+server:
+  port: 8000
+
+eureka:
+  client:
+    register-with-eureka: false          #表示自己是否注册进入eureka注册中心，true表示要注册
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
+

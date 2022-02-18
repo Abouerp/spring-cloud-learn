@@ -11,8 +11,6 @@ spring:
     username: root
     password: chenjinjie
 
-
-
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.abouerp.itlearn.entities
@@ -28,9 +26,9 @@ eureka:
     fetch-registry: true                #是否从eurekaServer抓取已有的注册信息，默认是true，单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
     serviceUrl:
 #      defaultZone: http://localhost:7001/eureka      #单机版
-      defaultZone: http://eureka7001.com:7001/eureka
+#      defaultZone: http://eureka7001.com:7001/eureka
       #集群的迷之操作，用单机版的去注册其中一个注册中心就自动共享，但用集群方法反而在其中一个注册中心注册不了
-#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     instance-id: payment8001        #起了别名
     prefer-ip-address: true         #访问路径可以显示ip
